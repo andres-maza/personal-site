@@ -13,10 +13,11 @@ a {
   color: rgba(0,0,0,1);
   text-decoration: underline;
   transition: 0.25s ease-in-out;
+  cursor: pointer;
 }
 
 a:hover {
-  color: rgba(0,0,0,.6);
+  color: rgba(11,20,128,1);
 }
 
 .main-heading {
@@ -25,10 +26,15 @@ a:hover {
   font-weight: 400;
 }
 
+.container {
+  position: relative;
+  z-index: 999;
+}
+
 .content {
   max-width: 1140px;
-  width: 90%;
-  margin: 4.25vw;
+  width: 80%;
+  margin: 60px 4.25vw;
 }
 
 .contact-info__emojis img {
@@ -39,4 +45,39 @@ a:hover {
 #contact-info {
   display: inline-flex;
   align-items: baseline;
+}
+
+#point-left-emoji, #mail-heart-emoji {
+  display: inline-block;
+  margin: 0 5px;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+#point-left-emoji:hover {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+}
+
+
+/* Canvas Things */
+#canvas-overlay {
+  background: linear-gradient(52deg, rgba(255,104,104,1) 0%, rgba(240,220,140,1) 11%, rgba(202,255,132,1) 23%, rgba(109,255,191,1) 36%, rgba(147,230,237,1) 47%, rgba(189,212,255,1) 60%, rgba(230,204,255,1) 71%, rgba(255,255,255,1) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+}
+
+#canvas-lines {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
 }
