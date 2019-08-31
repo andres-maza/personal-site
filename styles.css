@@ -1,0 +1,37 @@
+h1,h2,h3,h4,h5,h6,p,a {
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+}
+
+a {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  color: rgba(0,0,0,1);
+  text-decoration: underline;
+}
+
+.main-heading {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.content {
+  max-width: 1140px;
+  width: 90%;
+  margin: 4.25vw;
+}
+
+.contact-info__emojis img {
+  width: 27px;
+  margin: 0 5px;
+}
+
+#contact-info {
+  display: inline-flex;
+  align-items: baseline;
+}
