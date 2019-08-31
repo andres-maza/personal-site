@@ -12,6 +12,11 @@ a {
   font-weight: 400;
   color: rgba(0,0,0,1);
   text-decoration: underline;
+  transition: 0.25s ease-in-out;
+}
+
+a:hover {
+  color: rgba(0,0,0,.6);
 }
 
 .main-heading {
