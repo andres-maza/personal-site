@@ -34,9 +34,28 @@ a:hover {
 }
 
 .content {
+  position: relative;
   max-width: 1140px;
   width: 80%;
   margin: 60px 4.25vw;
+  animation: slideup 400ms cubic-bezier(0.16, 0.05, 0, 1), fadein 1s cubic-bezier(0,0,0.2,1);;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideup {
+  from {
+    top: 10px;
+  }
+  to {
+    top: 0;
+  }
 }
 
 .contact-info__emojis img {
