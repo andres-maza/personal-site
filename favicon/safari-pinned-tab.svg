@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>favicon copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="22.140377%" y1="88.7053571%" x2="83.3234127%" y2="14.8635913%" id="linearGradient-1">
+            <stop stop-color="#F1EBFF" offset="0%"></stop>
+            <stop stop-color="#DCFFFF" offset="48.499821%"></stop>
+            <stop stop-color="#9FFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="favicon-copy-2" fill="url(#linearGradient-1)" cx="9.325" cy="9.325" r="9.325"></circle>
+    </g>
+</svg>
