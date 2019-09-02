@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function(){
   function onMouseMove(event) {
     setTimeout(function(){
       checkCanvasDisplay();
-    }, 275)
+    }, 500)
 
     document.querySelector('body').style.cursor = 'none';
     document.querySelector('#small-circle').style.opacity = `1`;
