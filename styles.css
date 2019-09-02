@@ -9,6 +9,7 @@ html, body {
 /* Custom Cursor */
 
 #small-circle {
+  opacity: 0;
   position: fixed;
   display: inline-block;
   width: 5px;

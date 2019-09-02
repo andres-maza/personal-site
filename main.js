@@ -48,15 +48,11 @@ document.addEventListener('DOMContentLoaded', function(){
     // Set display of #canvas-overlay and #canvas-lines to none, to prevent weird flashing of gradient background on page load.
     document.querySelector('#canvas-overlay').style.display = 'none';
     document.querySelector('#canvas-lines').style.display = 'none';
-
-    document.addEventListener('mousemove', function(event) {
-      document.querySelector('body').style.cursor = 'none';
-      document.querySelector('#small-circle').style.transform = `translate3d(${event.clientX}px,${event.clientY}px, 0px)`;
-      // document.querySelector('#big-circle').style.cssText = `transform: translate3d(${event.clientX}px,${event.clientY}px, 0px);`;
-    });
+    // Mousemove/Touch events
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('touchstart', onTouchStart);
     document.addEventListener('touchmove', onTouchMove);
+    // Window resizing and orientation events
     window.addEventListener('resize', resizeCanvases);
     window.addEventListener('orientationchange', resizeCanvases);
     resizeCanvases();
@@ -92,6 +88,12 @@ document.addEventListener('DOMContentLoaded', function(){
     setTimeout(function(){
       checkCanvasDisplay();
     }, 275)
+
+    document.querySelector('body').style.cursor = 'none';
+    document.querySelector('#small-circle').style.opacity = `1`;
+    document.querySelector('#small-circle').style.transform = `translate3d(${event.clientX}px,${event.clientY}px, 0px)`;
+    // document.querySelector('#big-circle').style.cssText = `transform: translate3d(${event.clientX}px,${event.clientY}px, 0px);`;
+
     // Add into "points" array a new object everytime a mousemove event is detected, with the following: time, x position, y position.
     points.push({
       // Time is needed for requestAnimationFrame(?). The points here are used to create previous and new paths.
@@ -136,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // Run "drawImageCanvas".
     drawImageCanvas();
 
+    // Safari stuff to handle requestAnimationFrame
     // (function () {
     //   var lastTime = 0;
     //   var vendors = ['ms', 'moz', 'webkit', 'o'];
