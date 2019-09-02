@@ -6,6 +6,8 @@ html, body {
   height: 100%;
 }
 
+/* Custom Cursor */
+
 #small-circle {
   position: fixed;
   display: inline-block;
@@ -33,6 +35,8 @@ html, body {
   transition: 250ms cubic-bezier(0,0,0.2,1);
   z-index: 9999;
 }
+
+/* Typography */
 
 h1,h2,h3,h4,h5,h6,p,a {
   -webkit-font-smoothing: antialiased !important;
@@ -62,6 +66,8 @@ a:hover {
   font-weight: 400;
   line-height: 1.15;
 }
+
+/* Elements */
 
 .container {
   position: relative;
@@ -107,6 +113,8 @@ a:hover {
   margin-right: 10px;
 }
 
+/* Responsive */
+
 @media (max-width: 812px) {
   body {
     position: fixed;
@@ -139,7 +147,8 @@ a:hover {
   }
 }
 
-/* Canvas Things */
+/* Canvas */
+
 #canvas-overlay {
   background: linear-gradient(52deg, /*rgba(255,104,104,1) 0%,*/ rgba(240,220,140,1) 11%, rgba(202,255,132,1) 23%, rgba(109,255,191,1) 36%, rgba(147,230,237,1) 47%, rgba(189,212,255,1) 60%, rgba(230,204,255,1) 71%, rgba(255,255,255,1) 100%);
   position: absolute;
